@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>初试Rustlings--Rustlings安装部署和尝试</title>
+    <url>/2024/02/22/using-rustling/</url>
+    <content><![CDATA[<p><strong>今天在互联网闲逛的时候无意中发现了Rustlings这个项目，刚好最近有在打算学习Rust，于是抱着试试的心态尝试了一下</strong></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>推荐使用<a href="https://rustlings.cool/">官网</a>的手动安装方法</p>
+<ol>
+<li>Clone官方的仓库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.6.1)</span></span><br><span class="line">git <span class="built_in">clone</span> -b 5.6.1 --depth 1 https://github.com/rust-lang/rustlings</span><br><span class="line"><span class="built_in">cd</span> rustings</span><br></pre></td></tr></table></figure></li>
+<li>用cargo安装<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cargo install --force --path .</span><br></pre></td></tr></table></figure></li>
+<li>最后运行rustup <del>建议挂梯子，否则可能非常漫长</del><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rustup update</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>官方文档给出了具体的命令，详情查阅<a href="https://rustlings.cool/">官网</a>下的Doing exercises部分</p>
+<ol>
+<li>在安装目录下打开终端，输入<code>rustlings watch</code>启动Rustlings,本人这里使用了VScode内置的终端来方便使用<br><img src="https://picture-bed-1258433330.cos.ap-nanjing.myqcloud.com/img/blog/20240222145316.png"></li>
+<li>根据命令行提示完成对应练习，练习用的rs文件在目录下的<code>/exercises/</code>文件夹内，rustlings在检测到文件变动后会自动编译检查。</li>
+<li>完成练习后删除注释中的<code>I AM NOT DONE</code>来进行下一个练习</li>
+</ol>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>目前本人只是简单完成了2、3个练习内容，后续的进度也会在博客中及时更新 <del>大概</del></p>
+]]></content>
+      <categories>
+        <category>Rust</category>
+      </categories>
+      <tags>
+        <tag>Rust</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>复活！</title>
     <url>/2024/02/21/NewStart/</url>
     <content><![CDATA[<p>原身，启动！</p>
@@ -45,32 +71,6 @@
 <figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">string_uppercase</span>(<span class="keyword">mut</span> data: <span class="type">String</span><span class="comment">/*这里删除&amp;*/</span>) &#123;</span><br><span class="line">    data = data.<span class="title function_ invoke__">to_uppercase</span>();</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>最后再修改一下<code>main</code>就大功告成了<br>完整代码：</p>
 <figure class="highlight rust"><table><tr><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">data</span> = <span class="string">&quot;Rust is great!&quot;</span>.<span class="title function_ invoke__">to_string</span>();</span><br><span class="line"></span><br><span class="line">    <span class="title function_ invoke__">get_char</span>(&amp;data);</span><br><span class="line"></span><br><span class="line">    <span class="title function_ invoke__">string_uppercase</span>(data);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Should not take ownership</span></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">get_char</span>(data: &amp;<span class="type">String</span>) <span class="punctuation">-&gt;</span> <span class="type">char</span> &#123;</span><br><span class="line">    data.<span class="title function_ invoke__">chars</span>().<span class="title function_ invoke__">last</span>().<span class="title function_ invoke__">unwrap</span>()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Should take ownership</span></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">string_uppercase</span>(<span class="keyword">mut</span> data: <span class="type">String</span>) &#123;</span><br><span class="line">    data = data.<span class="title function_ invoke__">to_uppercase</span>();</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, data);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>Rust</category>
-      </categories>
-      <tags>
-        <tag>Rust</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>初试Rustlings--Rustlings安装部署和尝试</title>
-    <url>/2024/02/22/using-rustling/</url>
-    <content><![CDATA[<p><strong>今天在互联网闲逛的时候无意中发现了Rustlings这个项目，刚好最近有在打算学习Rust，于是抱着试试的心态尝试了一下</strong></p>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>推荐使用<a href="https://rustlings.cool/">官网</a>的手动安装方法</p>
-<ol>
-<li>Clone官方的仓库<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># find out the latest version at https://github.com/rust-lang/rustlings/releases/latest (on edit 5.6.1)</span></span><br><span class="line">git <span class="built_in">clone</span> -b 5.6.1 --depth 1 https://github.com/rust-lang/rustlings</span><br><span class="line"><span class="built_in">cd</span> rustings</span><br></pre></td></tr></table></figure></li>
-<li>用cargo安装<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">cargo install --force --path .</span><br></pre></td></tr></table></figure></li>
-<li>最后运行rustup <del>建议挂梯子，否则可能非常漫长</del><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">rustup update</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>官方文档给出了具体的命令，详情查阅<a href="https://rustlings.cool/">官网</a>下的Doing exercises部分</p>
-<ol>
-<li>在安装目录下打开终端，输入<code>rustlings watch</code>启动Rustlings,本人这里使用了VScode内置的终端来方便使用<br><img src="https://picture-bed-1258433330.cos.ap-nanjing.myqcloud.com/img/blog/20240222145316.png"></li>
-<li>根据命令行提示完成对应练习，练习用的rs文件在目录下的<code>/exercises/</code>文件夹内，rustlings在检测到文件变动后会自动编译检查。</li>
-<li>完成练习后删除注释中的<code>I AM NOT ALONE</code>来进行下一个练习</li>
-</ol>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>目前本人只是简单完成了2、3个练习内容，后续的进度也会在博客中及时更新 <del>大概</del></p>
-]]></content>
       <categories>
         <category>Rust</category>
       </categories>
