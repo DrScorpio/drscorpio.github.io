@@ -6,7 +6,7 @@
   <link href="http://blog.drscorpio.site/atom.xml" rel="self"/>
   
   <link href="http://blog.drscorpio.site/"/>
-  <updated>2024-02-28T03:28:53.631Z</updated>
+  <updated>2024-02-28T03:08:32.487Z</updated>
   <id>http://blog.drscorpio.site/</id>
   
   <author>
@@ -15,31 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>first-essay</title>
-    <link href="http://blog.drscorpio.site/2024/02/28/first-essay/"/>
-    <id>http://blog.drscorpio.site/2024/02/28/first-essay/</id>
-    <published>2024-02-28T03:07:59.000Z</published>
-    <updated>2024-02-28T03:28:53.631Z</updated>
-    
-    <content type="html"><![CDATA[<p>测试一下</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;测试一下&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    <category term="随笔" scheme="http://blog.drscorpio.site/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-    <category term="随笔" scheme="http://blog.drscorpio.site/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
   
   <entry>
     <title>Rust-枚举和Match匹配</title>
