@@ -58,33 +58,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Rust-枚举和Match匹配</title>
-    <url>/2024/02/28/rust-match/</url>
-    <content><![CDATA[<blockquote>
-<p><strong>系列文章</strong></p>
-<ol><li><a href="/2024/02/27/Rust-Borrowing/" title="Rust-引用与借用">Rust-引用与借用</a></li><li><a href="/2024/02/28/rust-match/" title="Rust-枚举和Match匹配">Rust-枚举和Match匹配</a></li></ol></blockquote>
-]]></content>
-      <categories>
-        <category>Rust</category>
-      </categories>
-      <tags>
-        <tag>Rust</tag>
-        <tag>学习笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>测试test</title>
-    <url>/2024/02/28/test/</url>
-    <content><![CDATA[<p>测试用</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>初试Rustlings-Rustlings安装部署和尝试</title>
     <url>/2024/02/22/using-rustling/</url>
     <content><![CDATA[<p><strong>今天在互联网闲逛的时候无意中发现了Rustlings这个项目，刚好最近有在打算学习Rust，于是抱着试试的心态尝试了一下</strong></p>
